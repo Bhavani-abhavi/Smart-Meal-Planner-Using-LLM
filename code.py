@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 
 # Configure the Gemini API key
-API_KEY = os.getenv("AIzaSyA341Ec9tWeenaXt8boCibTbjsspi01PW8")
+API_KEY = os.getenv("GEMINI_API_KEY")  # set via environment variable, never hardcode
 API_URL = f"https://generativelanguage.googleapis.com/v1beta2/models/gemini-1.5:generateText?key={API_KEY}"
 
 # Function to get meal plan with descriptions using Gemini API
